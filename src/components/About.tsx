@@ -1,7 +1,7 @@
 import type { Component } from 'solid-js';
 
 import styles from '../App.module.css';
-import kreslo from '../assets/img/kreslo.jpeg'
+import Bar from '../assets/img/bar.jpg'
 
 const About: Component = () => {
   return (
@@ -9,7 +9,12 @@ const About: Component = () => {
       {/* Block */}
       <div class="block">
         <div class="preview">
-          <img src={kreslo} alt="Solid logo" />
+          <img src={Bar} alt="Solid logo" />
+          <div class="preview-overlay">
+            <span class="material-symbols-outlined">
+              play_circle
+            </span>
+          </div>
         </div>
         <div>
           <div class="text">

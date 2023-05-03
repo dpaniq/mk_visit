@@ -2,7 +2,7 @@
 
 import type { Component } from 'solid-js';
 
-import kreslo from '../assets/img/kreslo.jpeg'
+import BlogImg from '../assets/img/blog.jpg'
 
 const Blog: Component = () => {
   return (
@@ -26,7 +26,7 @@ const Blog: Component = () => {
           </div>
         </div>
         <div class="preview">
-          <img src={kreslo} alt="Solid logo" />
+          <img src={BlogImg} alt="Solid logo" />
         </div>
       </div>
     </section>

@@ -13,7 +13,8 @@ const Home: Component = () => {
           <div class="text-home">
             <h1>Marek</h1>
             <h1>Kondratjev</h1>
-            <p>Filmmaker. Editor. Storyteller</p>
+            <br />
+            <h3>Filmmaker. Editor. Storyteller</h3>
 
           </div>
 
@@ -28,6 +29,11 @@ const Home: Component = () => {
         </div>
         <div class="preview">
           <img src={kreslo} alt="Solid logo" />
+          <div class="preview-overlay">
+            <span class="material-symbols-outlined">
+              play_circle
+            </span>
+          </div>
         </div>
       </div>
     </section>

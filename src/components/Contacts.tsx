@@ -11,31 +11,31 @@ import Gmail from '../assets/icons/gmail.svg'
 
 const Contacts: Component = () => {
   return (
-    <footer>
+    <footer id="contacts">
       <div class="contacts">
         <a href="#" class="contacts-group">
           <Telegram />
-          Telegram
+          {/* Telegram */}
         </a>
         <a href="#" class="contacts-group">
           <Youtube />
-          Youtube
+          {/* Youtube */}
         </a>
         <a href="#" class="contacts-group">
           <Facebook />
-          Facebook
+          {/* Facebook */}
         </a>
         <a href="#" class="contacts-group">
           <Instagram />
-          Instagram
+          {/* Instagram */}
         </a>
         <a href="#" class="contacts-group">
           <LinkedIn />
-          LinkedIn
+          {/* LinkedIn */}
         </a>
-        <a href="#" class="contacts-group">
+        <a href="#" class="contacts-group" >
           <Gmail />
-          Gmail
+          {/* Gmail */}
         </a>
       </div>
     </footer>

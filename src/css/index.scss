@@ -2,12 +2,10 @@
 @import './colors.scss';
 
 /* Common */
-* {
-  background-color: #282c34;
-}
+
 
 body {
-
+  background-color: #282c34;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -114,8 +112,8 @@ p {
 
 /* Contacts */
 .contacts {
-  position: sticky;
-  bottom: 0;
+  // position: sticky;
+  // bottom: 0;
   text-align: center;
 
   // border: 1px dashed tomato;
@@ -161,11 +159,13 @@ header {
   top: 0;
   top:0;
   z-index: 10;
-
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+  background: #282c34;
+  // border-bottom-left-radius: 50%;
+  // border-bottom-right-radius: 50%;
   border: 1px dashed tomato;
   border-top: none;
+  border-right: none;
+  border-left: none;
   margin: 5px 0;
 
   nav {
@@ -189,14 +189,13 @@ header {
 }
 
 footer {
-  position: sticky;
-  bottom: 0;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+  // position: sticky;
+  // bottom: 0;
+  // border-top-left-radius: 50%;
+  // border-top-right-radius: 50%;
   border: 1px dashed tomato;
   border-bottom: none;
-  border-right: none;
-  border-left: none;
+
   margin: 5px 0;
 }
 
@@ -288,6 +287,16 @@ div.separator {
 
 /* Sections */
 section {
+  img {
+    mix-blend-mode: luminosity;
+  }
+  &:hover {
+    img {
+      mix-blend-mode: normal;
+    }
+  }
+  
+
   margin-bottom: 5px;
   .block {
     position: relative;
@@ -309,7 +318,7 @@ section {
       transform: translate(-50%, -50%);
       text-align: center;
 
-      h1 {
+      h1{
         margin:0;
         padding: 0;
         font-size: 45px;
@@ -317,6 +326,7 @@ section {
         line-height: 50px;
         font-weight: 900;
       }
+      
       &::first-letter {
         color: tomato;
       }
@@ -338,6 +348,10 @@ section {
         color: $color_whitesmoke;
         line-height: 50px;
       }
+      h3 {
+        font-size: 25px;
+        color: $color_whitesmoke;
+      }
       p {
         color: $color_whitesmoke_darken_2;
       }
@@ -353,6 +367,43 @@ section {
         max-width: 100%;
         object-fit: cover;
         box-shadow: inset 0 0 100px 50px black;
+      }
+      .preview-overlay {
+        position: absolute;
+        top:50%;
+        left:50%;
+        display: none;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        z-index: 101;
+        color: tomato;
+       
+        transform: translate(-50%, -50%);
+        background: none;
+        font-weight: 900;
+        span {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left:50%;
+          font-size: 7em;
+          border-radius: 50%;
+          box-shadow: 0 0 45px 0 black;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        
+        .preview-overlay {
+          visibility: visible;
+          display: block;
+          // animation: bounceIn;
+          // animation-duration: 1s;
+          // animation-delay: 1s;
+        }
       }
     }
   }
