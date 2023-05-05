@@ -1,15 +1,26 @@
 import type { Component } from 'solid-js';
 
 import styles from '../App.module.css';
-import Bar from '../assets/img/bar.jpg'
+import Photoshoot from '../assets/img/photoshoot.jpg'
+import Separator from './Separator';
+import { Colors } from '../constants';
 
 const About: Component = () => {
   return (
     <section id="about">
+      <Separator
+        position="topRight"
+        styles={{
+          'position': 'absolute',
+          'top': 0,
+          'background-color': Colors.tomato,
+        }}
+      />
+
       {/* Block */}
       <div class="block">
         <div class="preview">
-          <img src={Bar} alt="Solid logo" />
+          <img src={Photoshoot} alt="Solid logo" />
           <div class="preview-overlay">
             <span class="material-symbols-outlined">
               play_circle
@@ -34,6 +45,15 @@ const About: Component = () => {
           </div>
         </div>
       </div>
+
+      <Separator
+        position="bottomRight"
+        styles={{
+          'position': 'absolute',
+          'bottom': 0,
+          'background-color': Colors.tomato,
+        }}
+      />
     </section>
   );
 };

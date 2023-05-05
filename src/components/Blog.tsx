@@ -3,13 +3,35 @@
 import type { Component } from 'solid-js';
 
 import BlogImg from '../assets/img/blog.jpg'
+import Separator from './Separator';
+import { Colors } from '../constants';
 
 const Blog: Component = () => {
   return (
     <section id="blog">
+      <Separator
+        position="topLeft"
+        styles={{
+          'position': 'absolute',
+          'top': 0,
+          // 'bottom': 0,
+          'background-color': Colors.gray,
+        }}
+      />
+
+      <Separator
+        position="bottomRight"
+        styles={{
+          'position': 'absolute',
+          // 'top': 0,
+          'bottom': 0,
+          'background-color': Colors.gray,
+        }}
+      />
+
       {/* Block */}
       <div class="block">
-        <div>
+        <div class="block__text">
           <div class="text-home">
             <h1>Inspiration</h1>
             <h5>Jan, 2021</h5>

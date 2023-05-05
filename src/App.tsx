@@ -10,9 +10,8 @@ import Contacts from './components/Contacts';
 
 const App: Component = () => {
   return (
-    <div>
+    <div class="container">
       <Header />
-      {/* <Separator /> */}
       <Home />
       <About />
       <Portfolio />
