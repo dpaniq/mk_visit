@@ -5,19 +5,10 @@ import Photoshoot from '../assets/img/photoshoot.jpg'
 import Separator from './Separator';
 import { Colors } from '../constants';
 
-const About: Component = () => {
+const Information: Component = () => {
   return (
-    <section id="about">
-      <div class="trapezoid-reverse">
-        {/* <Separator
-        position="topLeft"
-        styles={{
-          'position': 'absolute',
-          'top': 0,
-          'background-color': Colors.gray,
-        }}
-      /> */}
-
+    <section id="information" class="section-polygon">
+      <div class="trapezoid">
         {/* Block */}
         <div class="block">
           <div class="preview">
@@ -46,19 +37,9 @@ const About: Component = () => {
             </div>
           </div>
         </div>
-
-        {/* <Separator
-        position="bottomRight"
-        styles={{
-          'position': 'absolute',
-          'bottom': 0,
-          'background-color': Colors.gray,
-        }}
-      /> */}
       </div>
-
     </section>
   );
 };
 
-export default About;
+export default Information;

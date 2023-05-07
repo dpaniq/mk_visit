@@ -38,10 +38,8 @@ const Contacts: Component = () => {
           {/* Gmail */}
         </a>
       </div>
-      <p>Copyright MK. Developed by <span>
-        <a href="#">@dpaniq</a> /
-        <a href="#">@nastya</a> /
-        <a href="#">@mk</a>
+      <p>Copyright MK. <br />Developed by <span>
+        <a href="#">@dpaniq</a> / <a href="#">@nastya</a> / <a href="#">@mk</a>
       </span>
       </p>
     </footer>
