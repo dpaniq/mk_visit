@@ -9,9 +9,9 @@ import Instagram from '../assets/icons/instagram-48.svg'
 import LinkedIn from '../assets/icons/linkedin-48.svg'
 import Gmail from '../assets/icons/gmail.svg'
 
-const Contacts: Component = () => {
+const Footer: Component = () => {
   return (
-    <footer id="contacts">
+    <footer>
       <div class="contacts">
         <a href="#" class="contacts-group">
           <Telegram />
@@ -46,4 +46,4 @@ const Contacts: Component = () => {
   )
 }
 
-export default Contacts
+export default Footer

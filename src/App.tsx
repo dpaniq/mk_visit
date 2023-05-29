@@ -6,19 +6,21 @@ import About from './components/About';
 import Separator from './components/Separator';
 import Portfolio from './components/Portfolio';
 import Blog from './components/Blog';
-import Contacts from './components/Contacts';
 import Information from './components/Information';
+import Footer from './components/Footer';
 
 const App: Component = () => {
   return (
     <div class="container">
       <Header />
       <Home />
+      <Portfolio />
       <About />
       <Information />
-      <Portfolio />
       <Blog />
-      <Contacts />
+
+      {/* <div class="wrapper bg-container black"></div> */}
+      <Footer />
     </div>
   );
 };

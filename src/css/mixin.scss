@@ -39,6 +39,9 @@
   
   box-shadow: inset 0px 80px 18px 0px rgba(0, 0, 0, 0.63);
   clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
+  &:hover {
+    box-shadow: inset 0px 80px 18px 0px rgba(0, 0, 0, 0.73);
+  }
 }
 
 

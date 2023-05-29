@@ -1,0 +1,49 @@
+
+footer {
+  position: relative;
+  padding: 50px 0;
+  width: 100%;
+ 
+  bottom: 0;
+
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  text-align: center;
+  background: #282c34;
+  p {
+    color: $color_whitesmoke_darken_3;
+  }
+
+
+  /* Contacts */
+  .contacts {
+    .contacts-group {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgb(214, 85, 62);
+      padding: 10px;
+      font-weight: 300;
+
+      svg {
+        color: rgb(214, 85, 62);
+        fill: rgb(214, 85, 62);
+        stroke-width: 1px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: tomato;
+
+        svg {
+          fill: tomato;
+        }
+      }
+    }
+  }
+}
+
+
+

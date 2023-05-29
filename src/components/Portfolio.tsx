@@ -16,12 +16,16 @@ import { Colors } from '../constants';
 
 const Portfolio: Component = () => {
   return (
-    <section id="portfolio">
-      <div class="trapezoid-f2">
-        <span>MORE</span>
-      </div>
-      <div class="trapezoid">
-        <div class="grid-row portfolio">
+    <div class="wrapper bg-container gray trapezoid">
+      <section id="portfolio">
+        <div class="trapezoid-f2">
+          <span>MORE</span>
+        </div>
+        <div class="grid-row portfolio trapezoid">
+
+          <div class="preview">
+            <img src={coinGif} alt="Solid logo" />
+          </div>
           <div class="preview">
             <img src={ag1Gif} alt="Solid logo" />
           </div>
@@ -38,10 +42,41 @@ const Portfolio: Component = () => {
             <img src={ag2Gif} alt="Solid logo" />
           </div>
         </div>
-      </div>
-      {/* <div class="triangle"></div> */}
+        {/* <div class="trapezoid">
+          <div class="grid-row portfolio">
+            <div class="preview">
+              <img src={ag1Gif} alt="Solid logo" />
+            </div>
+            <div class="preview">
+              <img src={coinGif} alt="Solid logo" />
+            </div>
+            <div class="preview">
+              <img src={ag1Gif} alt="Solid logo" />
+            </div>
+            <div class="preview">
+              <img src={coinGif} alt="Solid logo" />
+            </div>
+            <div class="preview">
+              <img src={JokerGif} alt="Solid logo" />
+            </div>
+            <div class="preview">
+              <img src={skyGif} alt="Solid logo" />
+            </div>
+            <div class="preview">
+              <img src={ag2Gif} alt="Solid logo" />
+            </div>
+            <div class="preview">
+              <img src={skyGif} alt="Solid logo" />
+            </div>
+            <div class="preview">
+              <img src={ag2Gif} alt="Solid logo" />
+            </div>
+          </div>
+        </div> */}
+        {/* <div class="triangle"></div> */}
 
-    </section>
+      </section>
+    </div>
   );
 };
 
